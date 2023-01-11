@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz cumpleaños aleeeeeeeeee</title>
+    <link rel="stylesheet" href="css/bae1.css">
+    <style>
+        
+        @-webkit-keyframes rotation {
+
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+
+        }
+	
+        .c{
+
+            -webkit-transform: rotate(360deg);
+
+            animation: rotation 4s linear infinite;
+
+            -moz-animation: rotation 4s linear infinite;
+
+            -webkit-animation: rotation 4s linear infinite;
+
+            -o-animation: rotation 4s linear infinite;
+
+        }
+    </style>
+
+</head>
+<body >
+    <div class ="c">
+        <img src="b/S__4866095.jpg"  width="200" style="float: left;"/>
+    </div>
+    <div class="login">
+        <h2 style="color:rgb(251, 201, 242);">hola platatus mete la cuenta </h2>
+
+        <h3>espero que te guste bubu</h3>
+        <div class="image"><span><img src="b/LINE_ALBUM_20221229_230111_12.jpg" width="100px"></span></div>
+        
+        <form class="form">
+          
+            <button>
+                <a id="no6"href="#" style="text-decoration:none;">login</a>
+            </button>
+                
+                <button>
+                    <a id="no5"href="#" style="text-decoration:none;">efecto de tikitraka</a>
+                </button>
+                
+                <script src="js/bae1.js"></script>
+
+                
+          
+        </form>
+    </div>
+    <script>
+        var s1='2019-05-21';
+        s1 = new Date(s1.replace(/-/g,"/"));
+        var str_s1='desde ' +s1.getDate()+' de mayo de '+s1.getFullYear()+' ,que estamos juntos';
+
+        var wrap = document.createElement("div");
+        wrap.style='position:relative style= background-position:bottom right;';
+        var div_time = document.createElement("div");
+        var img = document.createElement("img");
+
+        
+        wrap.appendChild(div_time);
+        wrap.appendChild(img);
+        document.body.appendChild(wrap);
+        
+        setInterval(function(){
+            s2 = new Date();
+            var dateDiff = s2.getTime() - s1.getTime();
+            var dayDiff = Math.floor(dateDiff / (24 * 3600 * 1000));
+            var leave1=dateDiff%(24*3600*1000);   
+            var hours=Math.floor(leave1/(3600*1000));
+ 
+            var leave2=leave1%(3600*1000)    
+            var minutes=Math.floor(leave2/(60*1000));
+
+            var leave3=leave2%(60*1000);      
+            var seconds=Math.round(leave3/1000);
+            div_time.innerHTML="<P style='color: #fb82bc;font-size:35px;'>"+str_s1+" ,han pasado "+" han pasado "+seconds+" segundo "+minutes + " minutos" +hours +" horas y "+dayDiff+" dias <3";
+        +""},100); 
+   
+    </script>
+
+</body>
+</html>
